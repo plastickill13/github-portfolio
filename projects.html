@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Joerock Valleser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      /* Matching the background color */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #303132; /* Same color as the portfolio page */
+        color: #333;
+      }
+
+      header {
+        background-color: #3b3b3d;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      header a {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: normal;
+        transition: color 0.3s ease;
+      }
+
+      header a:hover {
+        color: #007ced;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        background-color: rgb(75, 75, 75);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-icon {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: #007ced;
+      }
+
+      .project-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-description {
+        font-size: 0.9rem;
+        color: #007ced;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      Projects
+    </header>
+    <div class="container">
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon">📁</div>
+          <div class="project-name">Meter Reading Application</div>
+          <div class="project-description">
+            Mobile Application using Kotlin with Database integration
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">📁</div>
+          <div class="project-name">Daily Expense Tracker Application</div>
+          <div class="project-description">
+            Application to track daily expenses using Java with Firebase
+            integration
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">📁</div>
+          <div class="project-name">Notes/Equation Solver</div>
+          <div class="project-description">Mobile Application to save notes and solve simple equations inputted on the note</div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </body>
+</html>
