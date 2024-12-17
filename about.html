@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Joerock Valleser</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="about-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-a"></i>
+            <div class="logo-text">Joerock Valleser</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="https://github.com/plastickill13">Github</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/profille.jpg" alt="About Joerock Valleser" />
+          </div>
+          <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+              Hello! I am <strong>Joerock Valleser</strong>, a Computer Science student at BISU-Calape, aspiring to become a Full Stack Developer. My journey in the tech world is fueled by a deep passion for <strong>Web Development</strong>, where I enjoy exploring the intricacies of both front-end and back-end technologies.
+            </p>
+            <p>
+              With a solid foundation in programming and design, I strive to craft applications that are both functional and aesthetically pleasing. My current focus is on building skills in frameworks, databases, and responsive web designs, ensuring I stay updated with the latest industry trends.
+            </p>
+            <p>
+              Outside of coding, I love experimenting with creative ideas and continuously challenging myself to learn new things.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="wrapper">
+        <div class="social">
+          <a href="https://www.facebook.com/SpokenWord.P" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/joerock-valleser-30b867273"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/itsmeakoy/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/SiomaiTv21496" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 Joerock Valleser. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      /** Navbar toggle functionality */
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
