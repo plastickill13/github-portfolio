@@ -82,6 +82,12 @@ header{
 
 .about-text{
     color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    margin: 2%;
   }
 
   footer{
