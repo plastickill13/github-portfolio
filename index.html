@@ -41,15 +41,14 @@
           <div class="hero-text">
             <h5>Hi I'm <span class="input">Adaptable</span></h5>
             <h1>Joerock Valleser</h1>
-            <p>
-              Computer Science Student
-            </p>
+            <p>Computer Science Student</p>
 
             <div class="btn-group">
               <a href="cv/Joerock Valleser  CV.pdf" class="btn active" download
                 >Download CV</a
               >
-              <a href="#" class="btn">Contact</a>
+              <!-- Viber Chat Button -->
+              <a href="viber://chat?number=639224321793" class="btn">Contact</a>
             </div>
 
             <div class="social">
@@ -81,12 +80,10 @@
       var togglebtn = document.querySelector(".togglebtn");
       var nav = document.querySelector(".navlinks");
       var links = document.querySelector(".navlinks li");
-
       togglebtn.addEventListener("click", function () {
         this.classList.toggle("click");
         nav.classList.toggle("open");
       });
-
       var typed = new Typed(".input", {
         strings: ["Adaptable", "Creative", "Flexible"],
         typedSpeed: 70,
