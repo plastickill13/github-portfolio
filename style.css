@@ -14,7 +14,29 @@ body{
     min-height: 100vh;
     background: #222;
 }
+.project-card {
+    background-color: #555555;
+    padding: 20px;
+    margin: 10px; /* Adjusted margin space */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
 
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-name {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    color: #ffffff;
+  }
 body {
     background-color: #222;
   }
@@ -146,6 +168,16 @@ nav .navlinks li a{
     transform: scale(1.2);
 }
 
+.about-text{
+    padding: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    margin: 2%;
+
+}
+
 .hero-text{
     max-width: 500px;
     display: flex;
@@ -191,6 +223,15 @@ nav .navlinks li a{
     margin-right: 10px;
     transition: 0.5s;
 }
+.social{
+    align-items: center;
+    text-align: center;
+}
+.wrapper{
+    align-items: center;
+    text-align: center;
+}
+
 .wrapper .social i:hover {
     color: #007ced;
     transform: rotate(360deg);
