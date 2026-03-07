@@ -274,7 +274,7 @@
           <h2>Just say Hello</h2>
 
           <div class="contact-grid">
-            <form class="contact-form" id="contactForm" action="https://wa.me/639224321793" method="get">
+            <form class="contact-form" id="contactForm" action="https://api.whatsapp.com/send" method="get">
               <label for="message">Message</label>
               <textarea
                 id="message"
@@ -353,12 +353,21 @@
         }
 
         const formattedMessage = encodeURIComponent(`Hello Joerock, ${message}`);
-        const whatsappUrl = `https://wa.me/639224321793?text=${formattedMessage}`;
-        window.open(whatsappUrl, "_blank", "noopener");
+        const appUrl = `whatsapp://send?phone=639224321793&text=${formattedMessage}`;
+        const webUrl = `https://api.whatsapp.com/send?phone=639224321793&text=${formattedMessage}`;
+
+        // Try opening WhatsApp app first; fall back to web if app protocol is unavailable.
+        window.location.href = appUrl;
+        setTimeout(() => {
+          window.open(webUrl, "_blank", "noopener");
+        }, 700);
       });
     </script>
   </body>
 </html>
+
+
+
 
 
 
