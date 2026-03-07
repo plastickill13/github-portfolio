@@ -1,94 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joerock Valleser-Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!----Font awesome cdn  font icon css -->
+    <title>Joerock Valleser | Web Developer</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Joerock Valleser, a Web Developer focused on automation, UX, and modern responsive websites."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero-header">
-      <div class="wrapper">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-a"></i>
-            <div class="logo-text">Joerock Valleser</div>
-          </div>
-          <nav>
-            <div class="togglebtn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navlinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="https://github.com/plastickill13">Github</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="container">
-          <div class="hero-pic">
-            <img src="images/profille.jpg" alt="profile pic" />
-          </div>
-          <div class="hero-text">
-            <h5>Hi I'm <span class="input">Adaptable</span></h5>
-            <h1>Joerock Valleser</h1>
-            <p>Computer Science Student</p>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Joe</a>
 
-            <div class="btn-group">
-              <a href="cv/Joerock Valleser  CV.pdf" class="btn active" download
-                >Download CV</a
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="header-phone" href="tel:09224321793">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>09224321793</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Welcome to my portfolio</p>
+            <h1>Hello, I'm Joerock Valleser</h1>
+            <p class="hero-role">Web Developer</p>
+            <a class="primary-btn" href="#contact">Hire me</a>
+
+            <div class="social-links" aria-label="Social media links">
+              <a
+                href="https://github.com/plastickill13"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-              <!-- Viber Chat Button -->
-              <a href="viber://chat?number=639224321793" class="btn">Contact</a>
-            </div>
-
-            <div class="social">
-              <a href="https://www.facebook.com/SpokenWord.P" target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:joevalleser@gmail.com" aria-label="Gmail">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
               <a
                 href="https://www.linkedin.com/in/joerock-valleser-30b867273"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/itsmeakoy/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://x.com/SiomaiTv21496" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="assets/img/section-images/profile.png"
+              alt="Joerock Valleser profile image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <p class="section-label">ABOUT ME</p>
+          <h2>Hi There! I'm Joerock Valleser</h2>
+          <p class="subtitle">Web Developer</p>
+          <p class="section-intro">
+            I specialize in visual-first development where design clarity meets
+            practical engineering. I enjoy building polished interfaces,
+            refining layout systems, and translating ideas into responsive
+            experiences that feel professional on every screen size.
+          </p>
+
+          <div class="about-grid">
+            <p><strong>Birthday:</strong> October 13, 1997</p>
+            <p><strong>Phone:</strong> 09224321793</p>
+            <p><strong>Email:</strong> joevalleser@gmail.com</p>
+            <p><strong>Location:</strong> Loon, Bohol</p>
+            <p><strong>Languages:</strong> English, Tagalog</p>
+            <p><strong>Freelance:</strong> Available</p>
+          </div>
+
+          <a class="secondary-btn" href="cv/cvupdated.pdf" download
+            >Download CV</a
+          >
+        </div>
+      </section>
+
+      <section class="section tint" id="services">
+        <div class="container">
+          <p class="section-label">SERVICES</p>
+          <h2>What I Do</h2>
+          <div class="services-grid">
+            <article class="card">
+              <h3>Website Automation</h3>
+              <p>I build workflow automation for websites, reducing repetitive tasks and improving operational efficiency.</p>
+            </article>
+            <article class="card">
+              <h3>UI/UX Design</h3>
+              <p>I design user-centered interfaces that balance visual clarity, accessibility, and business goals.</p>
+            </article>
+            <article class="card">
+              <h3>Product Design</h3>
+              <p>I craft product experiences from concept to execution with focus on usability and consistent design systems.</p>
+            </article>
+            <article class="card">
+              <h3>App Design</h3>
+              <p>I create intuitive app interfaces that prioritize smooth interactions, clean structure, and modern aesthetics.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive Design</h3>
+              <p>I develop layouts that adapt seamlessly across desktop, tablet, and mobile devices.</p>
+            </article>
+            <article class="card">
+              <h3>Frontend Development</h3>
+              <p>I build fast, maintainable frontend interfaces using modern HTML, CSS, and JavaScript practices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="section-label">MY SKILLS</p>
+          <h2>Core Capabilities</h2>
+          <p class="section-intro">
+            I focus on automation and modern web development workflows with
+            strong attention to usability, performance, and maintainable
+            interface code.
+          </p>
+
+          <div class="skills-wrap">
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>Automation</span><strong>80%</strong>
+              </div>
+              <div class="bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>Python</span><strong>90%</strong>
+              </div>
+              <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>Prompt Engineering</span><strong>90%</strong>
+              </div>
+              <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>UX Design</span><strong>85%</strong>
+              </div>
+              <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>HTML</span><strong>80%</strong>
+              </div>
+              <div class="bar"><span style="width: 80%"></span></div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="section tint" id="resume">
+        <div class="container">
+          <p class="section-label">RESUME</p>
+          <h2>Experience & Education</h2>
+
+          <div class="resume-grid">
+            <div class="resume-column">
+              <h3>Experience</h3>
+              <article class="timeline-item">
+                <p class="date">Dec 2025 - Present</p>
+                <h4>Dev Ops</h4>
+                <p class="meta">Metawatt</p>
+                <p>
+                  Contributed to deployment workflows, process monitoring, and
+                  automation of daily operations.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <p class="date">April 2025 - June 2025</p>
+                <h4>Intern</h4>
+                <p class="meta">Ellect.biz</p>
+                <p>
+                  Supported web implementation tasks, QA checks, and interface
+                  updates for client projects.
+                </p>
+              </article>
+            </div>
+
+            <div class="resume-column">
+              <h3>Education</h3>
+              <article class="timeline-item">
+                <p class="date">2021-2026</p>
+                <h4>Bachelor Science in Computer Science</h4>
+                <p class="meta">Bohol Island State University</p>
+                <p>
+                  Completed core training in software development, systems
+                  design, and applied programming.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="container">
+          <p class="section-label">PORTFOLIO</p>
+          <h2>Selected Work</h2>
+          <div class="portfolio-grid">
+            <article class="card">
+              <h3>Electric Bill App</h3>
+              <p>
+                Mobile-first utility workflow project focused on clean input
+                handling and efficient data entry.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Notes App</h3>
+              <p>
+                Simple productivity app for organizing notes with clear
+                interaction patterns and responsive layouts.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tint" id="contact">
+        <div class="container">
+          <p class="section-label">CONTACT ME</p>
+          <h2>Just say Hello</h2>
+
+          <div class="contact-grid">
+            <form class="contact-form" id="contactForm" action="https://wa.me/639224321793" method="get">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Write your message..." required
+              ></textarea>
+              <button type="submit" class="primary-btn">Send Message</button>
+            </form>
+
+            <aside class="contact-box">
+              <h3>Contact Information</h3>
+              <p><strong>Email:</strong> joevalleser@gmail.com</p>
+              <p><strong>Phone:</strong> 09224321793</p>
+              <p><strong>Address:</strong> Loon, Bohol, Philippines</p>
+
+              <div class="social-links" aria-label="Contact social media links">
+                <a
+                  href="https://github.com/plastickill13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:joevalleser@gmail.com" aria-label="Gmail">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joerock-valleser-30b867273"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>� 2026. Designed by Joerock. All right reserved.</p>
       </div>
-    </div>
-    <!---typed js for typing text effects-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    </footer>
+
     <script>
-      /** creating button click show hide navbar **/
-      var togglebtn = document.querySelector(".togglebtn");
-      var nav = document.querySelector(".navlinks");
-      var links = document.querySelector(".navlinks li");
-      /** creating button click show hide navbar **/
-      togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
+      const navToggle = document.querySelector(".nav-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
       });
-      var typed = new Typed(".input", {
-        strings: ["Adaptable", "Creative", "Flexible"],
-        typedSpeed: 70,
-        backSpeed: 55,
-        loop: true,
+
+      document.querySelectorAll(".main-nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mainNav.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      const contactForm = document.querySelector("#contactForm");
+      const messageInput = document.querySelector("#message");
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const message = messageInput.value.trim();
+        if (!message) {
+          messageInput.focus();
+          return;
+        }
+
+        const formattedMessage = encodeURIComponent(`Hello Joerock, ${message}`);
+        const whatsappUrl = `https://wa.me/639224321793?text=${formattedMessage}`;
+        window.open(whatsappUrl, "_blank", "noopener");
       });
     </script>
   </body>
 </html>
+
+
+
+

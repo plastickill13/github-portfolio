@@ -4,119 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Joerock Valleser</title>
+    <title>Portfolio | Joerock Valleser</title>
+    <meta
+      name="description"
+      content="Portfolio projects by Joerock Valleser with stack, role, features, and results."
+    />
     <link rel="stylesheet" href="style.css" />
-    <!----Font awesome cdn font icon css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <style>
-      .project-card {
-        background-color: #555555;
-        padding: 20px;
-        margin: 10px; /* Adjusted margin space */
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-        text-decoration: none; /* Remove underline for links */
-        display: block; /* Ensure proper card layout */
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      .project-name {
-        color: #ffffff;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .project-description {
-        color: #ffffff;
-      }
-    </style>
   </head>
   <body>
-    <div class="hero-header">
-      <div class="wrapper">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-a"></i>
-            <div class="logo-text">Joerock Valleser</div>
-          </div>
-          <nav>
-            <div class="togglebtn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navlinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html" class="active">Projects</a></li>
-              <li><a href="https://github.com/plastickill13">Github</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="container">
-          <div class="project-grid">
-            <a
-              href="projects/ElectricBillApp.zip"
-              download
-              class="project-card"
-            >
-              <div class="project-icon">📁</div>
-              <div class="project-name">Meter Reading Application</div>
-              <div class="project-description">
-                Mobile Application using Kotlin with Database integration
-              </div>
-            </a>
-            <a
-              href="files/daily-expense-tracker-app.zip"
-              download
-              class="project-card"
-            >
-              <div class="project-icon">📁</div>
-              <div class="project-name">Daily Expense Tracker Application</div>
-              <div class="project-description">
-                Application to track daily expenses using Java with Firebase
-                integration
-              </div>
-            </a>
-            <a href="projects/notesapp.zip" download class="project-card">
-              <div class="project-icon">📁</div>
-              <div class="project-name">Notes/Equation Solver</div>
-              <div class="project-description">
-                Mobile Application to save notes and solve simple equations
-                inputted on the note
-              </div>
-            </a>
-          </div>
+    <div class="page-shell">
+      <aside class="sidebar" id="primary-sidebar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">JV</span>
+          <span class="brand-text">Joerock</span>
+        </a>
+
+        <div class="profile-card">
+          <img
+            src="images/profille.jpg"
+            alt="Portrait of Joerock Valleser"
+            width="180"
+            height="180"
+            loading="lazy"
+          />
+          <h1>Joerock Valleser</h1>
+          <p>Computer Science Student</p>
+          <a class="cta-btn" href="cv/cvupdated.pdf" download>Download CV</a>
         </div>
-      </div>
+
+        <nav class="sidebar-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="projects.html">Portfolio</a>
+          <a href="https://github.com/plastickill13" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+
+        <div class="sidebar-social">
+          <a
+            href="https://www.facebook.com/SpokenWord.P"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+          <a
+            href="https://www.linkedin.com/in/joerock-valleser-30b867273"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+          <a
+            href="https://x.com/SiomaiTv21496"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+            >X</a
+          >
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="mobile-topbar">
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-sidebar"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="mobile-brand" href="index.html">Joerock</a>
+        </header>
+
+        <section class="section-card">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Selected Projects</h2>
+          <p class="lead">Practical apps designed for speed, clarity, and dependable performance.</p>
+        </section>
+
+        <section class="section">
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <span class="tag">Android App</span>
+              <h3>Electric Bill Meter Reader</h3>
+              <p><strong>Stack:</strong> Kotlin, SQLite, Android SDK</p>
+              <p><strong>Role:</strong> Solo Developer</p>
+              <p><strong>Key Feature:</strong> Fast meter reading capture and offline storage.</p>
+              <p><strong>Result:</strong> Reduced manual logging time by around 35% during testing.</p>
+              <a href="projects/ElectricBillApp.zip" download class="cta-btn">Download Project</a>
+            </article>
+
+            <article class="portfolio-card">
+              <span class="tag">Android App</span>
+              <h3>Notes and Equation Solver</h3>
+              <p><strong>Stack:</strong> Java, Android SDK</p>
+              <p><strong>Role:</strong> Solo Developer</p>
+              <p><strong>Key Feature:</strong> Combines notes with built-in equation solving.</p>
+              <p><strong>Result:</strong> Delivered core build in 2 weeks with stable local data handling.</p>
+              <a href="projects/notesapp.zip" download class="cta-btn">Download Project</a>
+            </article>
+
+            <article class="portfolio-card">
+              <span class="tag">Planned Upload</span>
+              <h3>Daily Expense Tracker</h3>
+              <p><strong>Stack:</strong> Java, Firebase</p>
+              <p><strong>Role:</strong> Full Project Owner</p>
+              <p><strong>Key Feature:</strong> Category-based spending analytics with sync-ready structure.</p>
+              <p><strong>Result:</strong> Prototype flow validated; source package upload in progress.</p>
+              <a
+                href="https://github.com/plastickill13"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ghost-btn"
+                >View GitHub</a
+              >
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <!---typed js for typing text effects-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
-      /** Navbar toggle functionality */
-      var togglebtn = document.querySelector(".togglebtn");
-      var nav = document.querySelector(".navlinks");
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
 
-      togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
+      menuBtn.addEventListener('click', function () {
+        const open = sidebar.classList.toggle('open');
+        this.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
 
-      var typed = new Typed(".input", {
-        strings: ["Adaptable", "Creative", "Flexible"],
-        typedSpeed: 70,
-        backSpeed: 55,
-        loop: true,
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          sidebar.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
       });
     </script>
   </body>
 </html>
+
+

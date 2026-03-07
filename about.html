@@ -4,88 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Joerock Valleser</title>
+    <title>About | Joerock Valleser</title>
+    <meta
+      name="description"
+      content="About Joerock Valleser, background, education, and experience timeline."
+    />
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
   </head>
   <body>
-    <div class="about-header">
-      <div class="wrapper">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-a"></i>
-            <div class="logo-text">Joerock Valleser</div>
-          </div>
-          <nav>
-            <div class="togglebtn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="navlinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html" class="active">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="https://github.com/plastickill13">Github</a></li>
-            </ul>
-          </nav>
-        </header>
+    <div class="page-shell">
+      <aside class="sidebar" id="primary-sidebar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">JV</span>
+          <span class="brand-text">Joerock</span>
+        </a>
 
-        <div class="about-container">
-          <div class="about-image">
-            <img src="images/profille.jpg" alt="About Joerock Valleser" />
-          </div>
-          <div class="about-text">
-            <h1>About Me</h1>
-            <p>
-              Hello! I am <strong>Joerock Valleser</strong>, a Computer Science student at BISU-Calape, with a strong aspiration to become a Full Stack Developer. My journey in technology is driven by a deep passion for <strong>Web Development</strong>, where I thrive on mastering both front-end and back-end technologies.
-            <p>
-              With a solid foundation in programming and design, I am dedicated to creating applications that seamlessly combine functionality with aesthetic appeal. Currently, I am focused on enhancing my expertise in modern frameworks, database management, and responsive web design, while staying attuned to the latest industry advancements.
-            </p>
-            <p>
-              Outside of coding, I love experimenting with creative ideas and continuously challenging myself to learn new things.
-            </p>
-          </div>
+        <div class="profile-card">
+          <img
+            src="images/profile.png"
+            alt="Headshot of Joerock Valleser"
+            width="180"
+            height="180"
+            loading="lazy"
+          />
+          <h1>Joerock Valleser</h1>
+          <p>Computer Science Student</p>
+          <a class="cta-btn" href="projects.html">View Work</a>
         </div>
-      </div>
-    </div>
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="wrapper">
-        <div class="social">
-          <a href="https://www.facebook.com/SpokenWord.P" target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
+        <nav class="sidebar-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+          <a href="projects.html">Portfolio</a>
+          <a href="cv/cvupdated.pdf" download>Download CV</a>
+        </nav>
+
+        <div class="sidebar-social">
+          <a
+            href="https://www.facebook.com/SpokenWord.P"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook</a
+          >
           <a
             href="https://www.linkedin.com/in/joerock-valleser-30b867273"
             target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://www.instagram.com/itsmeakoy/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://x.com/SiomaiTv21496" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/plastickill13"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            >GitHub</a
+          >
         </div>
-        <p>&copy; 2024 Joerock Valleser. All rights reserved.</p>
-      </div>
-    </footer>
+      </aside>
+
+      <main class="content">
+        <header class="mobile-topbar">
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-sidebar"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="mobile-brand" href="index.html">Joerock</a>
+        </header>
+
+        <section class="section-card about-intro">
+          <p class="eyebrow">About Me</p>
+          <h2>Hi There! I'm Joerock Valleser</h2>
+          <h3>Computer Science Student</h3>
+          <p class="lead">
+            I am currently focused on web and mobile development. I enjoy building interfaces that are
+            visually clear and engineering solutions that work reliably in real use.
+          </p>
+          <div class="about-meta">
+            <p><strong>Birthday:</strong> December 20, 2003</p>
+            <p><strong>Phone:</strong> +63 922 432 1793</p>
+            <p><strong>Email:</strong> valleserjoerock@example.com</p>
+            <p><strong>Location:</strong> Bohol, Philippines</p>
+            <p><strong>Languages:</strong> English, Filipino</p>
+            <p><strong>Freelance:</strong> Available</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <p class="eyebrow">Resume</p>
+          <h2 class="section-title">Education and Experience</h2>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <h4>Bachelor of Science in Computer Science</h4>
+                  <p>BISU-Calape | 2022 - Present</p>
+                  <p>Building core skills in software engineering, data structures, and web development.</p>
+                </li>
+                <li>
+                  <h4>Senior High School - STEM</h4>
+                  <p>2019 - 2021</p>
+                  <p>Developed analytical and technical foundations for programming and mathematics.</p>
+                </li>
+              </ul>
+            </article>
+            <article class="timeline-card">
+              <h3>Project Experience</h3>
+              <ul>
+                <li>
+                  <h4>Electric Bill Meter Reader</h4>
+                  <p>Kotlin | Android</p>
+                  <p>Built a mobile app for meter reading input and local data storage for utility workflows.</p>
+                </li>
+                <li>
+                  <h4>Notes and Equation Solver</h4>
+                  <p>Java | Android</p>
+                  <p>Created a notes app with equation parsing for quick student productivity use cases.</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <script>
-      /** Navbar toggle functionality */
-      var togglebtn = document.querySelector(".togglebtn");
-      var nav = document.querySelector(".navlinks");
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
 
-      togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
+      menuBtn.addEventListener('click', function () {
+        const open = sidebar.classList.toggle('open');
+        this.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          sidebar.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
       });
     </script>
   </body>
 </html>
+
+
