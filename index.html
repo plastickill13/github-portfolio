@@ -100,7 +100,7 @@
         <div class="container">
           <p class="section-label">ABOUT ME</p>
           <h2>Hi There! I'm Joerock Valleser</h2>
-          <p class="subtitle">Web Developer</p>
+          <p class="subtitle">Developer</p>
           <p class="section-intro">
             I specialize in visual-first development where design clarity meets
             practical engineering. I enjoy building polished interfaces,
@@ -116,9 +116,7 @@
             <p><strong>Freelance:</strong> Available</p>
           </div>
 
-          <a class="secondary-btn" href="cv/CV.pdf" download
-            >Download CV</a
-          >
+          <a class="secondary-btn" href="cv/CV.pdf" download>Download CV</a>
         </div>
       </section>
 
@@ -129,27 +127,45 @@
           <div class="services-grid">
             <article class="card">
               <h3>Website Automation</h3>
-              <p>I build workflow automation for websites, reducing repetitive tasks and improving operational efficiency.</p>
+              <p>
+                I build workflow automation for websites, reducing repetitive
+                tasks and improving operational efficiency.
+              </p>
             </article>
             <article class="card">
               <h3>UI/UX Design</h3>
-              <p>I design user-centered interfaces that balance visual clarity, accessibility, and business goals.</p>
+              <p>
+                I design user-centered interfaces that balance visual clarity,
+                accessibility, and business goals.
+              </p>
             </article>
             <article class="card">
               <h3>Product Design</h3>
-              <p>I craft product experiences from concept to execution with focus on usability and consistent design systems.</p>
+              <p>
+                I craft product experiences from concept to execution with focus
+                on usability and consistent design systems.
+              </p>
             </article>
             <article class="card">
               <h3>App Design</h3>
-              <p>I create intuitive app interfaces that prioritize smooth interactions, clean structure, and modern aesthetics.</p>
+              <p>
+                I create intuitive app interfaces that prioritize smooth
+                interactions, clean structure, and modern aesthetics.
+              </p>
             </article>
             <article class="card">
               <h3>Responsive Design</h3>
-              <p>I develop layouts that adapt seamlessly across desktop, tablet, and mobile devices.</p>
+              <p>
+                I develop layouts that adapt seamlessly across desktop, tablet,
+                and mobile devices.
+              </p>
             </article>
             <article class="card">
               <h3>Frontend Development</h3>
-              <p>I build fast, maintainable frontend interfaces using modern HTML, CSS, and JavaScript practices.</p>
+              <p>
+                I build fast, maintainable frontend interfaces using modern
+                HTML, CSS, and JavaScript practices.
+              </p>
             </article>
           </div>
         </div>
@@ -222,8 +238,9 @@
                 <h4>Junior Developer</h4>
                 <p class="meta">Metawatt</p>
                 <p>
-                  Contributed to web scraping workflows, data extraction automation,
-                  and monitoring of scheduled scraping operations for daily data pipelines.
+                  Contributed to web scraping workflows, data extraction
+                  automation, and monitoring of scheduled scraping operations
+                  for daily data pipelines.
                 </p>
               </article>
               <article class="timeline-item">
@@ -262,9 +279,9 @@
               <h3>ResQTech</h3>
               <p>
                 Emergency response and public safety platform featuring
-                AI-powered incident verification, GPS-driven dispatch,
-                real-time location tracking, automated reporting, and
-                coordinated emergency management.
+                AI-powered incident verification, GPS-driven dispatch, real-time
+                location tracking, automated reporting, and coordinated
+                emergency management.
               </p>
             </article>
             <article class="card">
@@ -291,13 +308,19 @@
           <h2>Just say Hello</h2>
 
           <div class="contact-grid">
-            <form class="contact-form" id="contactForm" action="https://api.whatsapp.com/send" method="get">
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://api.whatsapp.com/send"
+              method="get"
+            >
               <label for="message">Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows="7"
-                placeholder="Write your message..." required
+                placeholder="Write your message..."
+                required
               ></textarea>
               <button type="submit" class="primary-btn">Send Message</button>
             </form>
@@ -369,7 +392,9 @@
           return;
         }
 
-        const formattedMessage = encodeURIComponent(`Hello Joerock, ${message}`);
+        const formattedMessage = encodeURIComponent(
+          `Hello Joerock, ${message}`,
+        );
         const appUrl = `whatsapp://send?phone=639224321793&text=${formattedMessage}`;
         const webUrl = `https://api.whatsapp.com/send?phone=639224321793&text=${formattedMessage}`;
 
@@ -382,10 +407,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
