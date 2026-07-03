@@ -213,12 +213,16 @@ h1 {
 
 .hero-media img {
   width: 100%;
+  aspect-ratio: 1 / 1.04;
+  object-fit: cover;
+  object-position: 50% 12%;
   border-radius: 20px;
   display: block;
 }
 
 .section {
   padding: 4.2rem 0;
+  scroll-margin-top: 92px;
 }
 
 .section.tint {
